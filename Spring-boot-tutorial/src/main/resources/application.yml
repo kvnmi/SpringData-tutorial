@@ -1,0 +1,18 @@
+welcome:
+  message: Hello World
+
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/departments
+    password: password
+  jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+server:
+  error:
+    include-message: always
